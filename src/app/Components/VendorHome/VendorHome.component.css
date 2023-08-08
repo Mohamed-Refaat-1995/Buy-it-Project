@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+#logo{
+  font-family: cursive;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  
+  }
+  .box{
+    width: 100%;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+  }
+  #vendor-slider img{
+    height: 90vh;
+  }

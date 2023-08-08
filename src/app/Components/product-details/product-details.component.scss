@@ -1,0 +1,80 @@
+#product-display-zone{
+  width: 100%;
+  height: 25rem;
+
+}
+#prodName{
+  margin-top: 1rem;
+}
+#product-image{
+  border: .5rem solid white;
+
+}
+#prodBrand,#prodcat,#prodPrice,#prodRate{
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+i{
+  font-size: .85rem;
+
+}
+#product-data{
+
+  background-color: #eee;
+  border: .5rem solid white;
+}
+#product-add-to-cart{
+  border: .5rem solid white;
+  background-color: orange;
+}
+#cart-item-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#shopping-btns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cart-btns{
+  width: 10rem;
+}
+#shpping-bag{
+ margin-left: 3rem;
+}
+#product-image img{
+  height: 25rem;
+  width: 100%;
+  margin: .5rem;
+}
+#customer-comments{
+  margin-top: 1rem;
+}
+#feedback-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 65rem;
+}
+.example-card {
+  background-color: #eee;
+  padding: .5rem;
+}
+
+.example-header-image {
+  background-image: url('../../../assets/Mohamed-Refaat.jpg');
+  background-size: cover;
+}
+mat-form-field{
+  width: 100%;
+}
+mat-select,mat-option {
+  z-index: 999999;
+
+}
+lib-ngx-image-zoom{
+ transform: scale(.7);
+}

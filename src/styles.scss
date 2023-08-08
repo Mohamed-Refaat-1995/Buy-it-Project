@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+   height: 100%;
+  //  direction: ltr;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root{
+--bg-color:#35155D !important;
+--text-color:#F6F4EB !important;
+}
+.dark-mode{
+  --bg-color:#000000 !important;
+--text-color:orange !important;
+
+}
+app-VendorDashboard{
+  height: 100vh;
+}

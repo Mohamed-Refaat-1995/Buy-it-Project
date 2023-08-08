@@ -1,0 +1,47 @@
+mat-form-field{
+  transform: scale(.7);
+  }
+
+.carousel-item img
+{
+  height: 30rem;
+}
+.carousel-control-next-icon{
+
+}
+.example-card {
+  // width: 25%;
+  border: .1rem solid var(--bg-color);
+  border-radius: 1rem;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.col-sm-6 ,.col-md-3{
+  // width: 25%;
+  cursor: pointer;
+}
+table{
+  border: .1rem solid var(--bg-color);
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.5;
+  width: 100%;
+  margin-top: .5rem;
+  border-radius: 1rem;
+}
+th,td{
+  border: .1rem solid var(--bg-color);
+}
+#card-btns{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 1rem;
+}
+#card-btns #more-btn{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

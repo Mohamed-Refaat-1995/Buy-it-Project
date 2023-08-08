@@ -1,0 +1,19 @@
+.box{
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-box{
+  width: 40%;
+  height: 50%;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-box i{
+  color: rgb(204, 190, 190);
+  text-align: center;
+}

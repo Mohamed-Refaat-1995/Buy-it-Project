@@ -1,0 +1,117 @@
+<!-- <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+  {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}} 
+</button>-->
+<div class="container mt-5">
+  <div class="logo-box mt-5">
+    Sign Up To <span id="logo">Buy it </span> (Vendor Registration)
+  </div>
+  <mat-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup" id="form-1">
+        <ng-template matStepLabel>Basic Info</ng-template>
+        <mat-form-field>
+          <mat-label>User Name</mat-label>
+          <input matInput  formControlName="firstCtrl" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label> Name</mat-label>
+          <input matInput  formControlName="firstCtrl" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Gender </mat-label>
+          <mat-select>
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>    
+          </mat-form-field>
+          <br/>
+        <mat-form-field>
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="pat@example.com" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Enter your password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Enter your password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="Additional Info">
+      <form [formGroup]="secondFormGroup" id="form-2">
+        <mat-form-field>
+          <mat-label>Governorate </mat-label>
+          <mat-select>
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>    
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>City </mat-label>
+          <mat-select>
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>    
+          </mat-form-field>
+        <mat-form-field>
+          <mat-label> Street</mat-label>
+          <input matInput  formControlName="firstCtrl" required>
+        </mat-form-field>
+        <br>
+          <br/>
+        <mat-form-field>
+          <mat-label> National Id Number</mat-label>
+          <mat-label> Street</mat-label>
+          <input matInput  formControlName="firstCtrl" required>
+        </mat-form-field>
+        <br>
+        <div id="national-id-image">
+          <div id="load-logo" ><span (click)="clickFileInput()" >Browse to add National Id Image<img width="32" height="32" src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/external-upload-network-and-cloud-computing-flatart-icons-flat-flatarticons.png" alt="external-upload-network-and-cloud-computing-flatart-icons-flat-flatarticons"/></span>
+          </div> 
+          <input type="file" name="" id="national-id-image-input" #nationalIdInput (change)="uploadImage($event)">
+          <button mat-raised-button color="warn" id="delete-btn" *ngIf="isFound" (click)="deleteNationalIdImage()">X</button>
+        </div>
+        <br>
+        <div id="national-id-image">
+          <div id="load-logo" ><span (click)="clickFileInput()" >Browse to add yourImage<img width="32" height="32" src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/external-upload-network-and-cloud-computing-flatart-icons-flat-flatarticons.png" alt="external-upload-network-and-cloud-computing-flatart-icons-flat-flatarticons"/></span>
+          </div> 
+          <input type="file" name="" id="national-id-image-input" #nationalIdInput (change)="uploadImage($event)">
+          <button mat-raised-button color="warn" id="delete-btn" *ngIf="isFound" (click)="deleteNationalIdImage()">X</button>
+        </div>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step id="final-step">
+      <ng-template matStepLabel>Finish </ng-template>
+      <p>You are about to finish your registration</p>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button (click)="SignUp()">Sign Up</button>
+      </div>
+    </mat-step>
+  </mat-stepper>
+  
+</div>

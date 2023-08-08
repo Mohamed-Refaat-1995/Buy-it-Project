@@ -1,0 +1,31 @@
+<div class="payment-body">
+  <form class="payment-form">
+    <h2 id="logo">Buy it</h2>
+    <mat-form-field id="visa-number">
+      <mat-label>Enter Your Card Number (16 Number)</mat-label>
+      <input matInput #input maxlength="16" placeholder="Ex. Nougat">
+    </mat-form-field>
+    <div class="payment-date">
+      <mat-form-field id="digit-code">
+        <mat-label>Enter Your Card Number </mat-label>
+        <input matInput #input maxlength="3" placeholder="Ex. Nougat">
+      </mat-form-field>
+      <mat-form-field id="payment-expire-date">
+        <mat-label>Month and Year</mat-label>
+        <input matInput [matDatepicker]="dp" [formControl]="date">
+        <!-- <mat-hint>MM/YYYY</mat-hint> -->
+        <mat-datepicker-toggle matIconSuffix [for]="dp"></mat-datepicker-toggle>
+        <mat-datepicker #dp
+                        startView="multi-year"
+                        (monthSelected)="setMonthAndYear($event, dp)"
+                        panelClass="example-month-picker">
+        </mat-datepicker>
+      </mat-form-field>
+  
+    </div>
+    <div class="btns">
+      <button mat-raised-button color="warn"(click)="returnToCart()">Back</button>
+      <button mat-raised-button color="warn"(click)="Pay()">Pay</button>
+    </div>
+  </form>
+</div>

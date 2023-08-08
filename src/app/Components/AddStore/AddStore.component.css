@@ -1,0 +1,16 @@
+.store-name-collapsed,.category-name-collapsed{
+  width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.store-name,.category-name{
+  width: 77vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btns{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}

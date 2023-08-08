@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+#logo{
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 2rem;
+ color: darkred;
+
+}
+.logo-box{
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+text-align: center;
+font-weight: bold;
+font-size: 1.5rem;
+/* border: .5rem solid #eee; */
+padding: 1rem;
+/* background-color: #eee; */
+}
+#form-1 mat-form-field,#form-2 mat-form-field{
+  width: 100%;
+}
+.mat-step-header.cdk-keyboard-focused, .mat-step-header.cdk-program-focused, .mat-step-header:hover:not([aria-disabled]), .mat-step-header:hover[aria-disabled=false] {
+  background-color: unset;
+}
+#national-id-image{
+  width:100% ;
+  height: 3.5rem;
+  background-color: #ECECEC;
+  border: .15rem dashed #5f5c5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  
+}
+#national-id-image-input{
+  visibility: hidden;
+}
+#load-logo{
+  width: 80%;
+  text-align: center;
+  
+  color: rgb(146, 143, 143);
+ 
+}
+#load-logo span{
+  cursor: pointer;
+}
+#load-logo span:hover{
+  cursor: pointer;
+  color:darkred;
+  font-weight: bold;
+}
+#load-logo span:active{
+  cursor: pointer;
+  color:darkred;
+  transform: translateY(.5rem);
+}
+#delete-btn{
+  transform: scale(0.8);
+}
+#final-ste{
+  width: 100%;
+}

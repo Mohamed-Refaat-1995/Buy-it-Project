@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark px-2">
+  <div class="side-nav-button p-2 me-3 text-light" (click)="collapseSideBar()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <a href="#" class="navbar-brand px-2">Buy it</a>
+    <div class="navbar-collapse d-flex justify-content-between align-iyems-center">
+        <form action="#">
+          <input type="text" placeholder="Search..." name="" id="" class="form-control search-input d-none d-sm-none d-md-inline">
+        </form>
+        <div class="btns">
+          <mat-slide-toggle id="dark-mode-btn">Dark Mode</mat-slide-toggle>
+          <div matBadge="4" matBadgeOverlap="true" class="demo-section">
+            <i class='bx bxs-bell'(click)="goToNotification()" ></i>
+          </div>
+        </div>
+        
+    </div>
+</nav>

@@ -1,0 +1,12 @@
+<div class="container-fluid g-0">
+<app-VendorHeader (isCollapsed)="toggleSideBar($event)" ></app-VendorHeader>
+<main>
+  <app-VendorSideBar class="black-border" [ngClass]="{'app-VendorSideBar-collapse': isCollapsed}" [sideBarCollapsed]="isCollapsed"></app-VendorSideBar>
+  <div class="display-area p-3 " [ngClass]="{'display-area-collapse': isCollapsed}">
+<!-- <p class="fs-1 fw-bold fst-italic">Main Display Area</p> -->
+<router-outlet></router-outlet>
+
+  </div>
+</main>
+
+</div>

@@ -1,0 +1,15 @@
+<div id="otp-body">
+  <form  id="otp-form">
+    <h2 id="logo">Buy it</h2>
+    <mat-form-field id="email-input">
+      <mat-label>Enter Your OTP Code</mat-label>
+      <input type="text" matInput>
+      <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+    </mat-form-field>
+    <div class="box">
+      <button mat-raised-button color="warn">Resend Code</button>
+      <button mat-raised-button color="warn" (click)="ResetPassword()" id="reset-password-btn">Reset Password</button>
+
+    </div>
+  </form>
+</div>

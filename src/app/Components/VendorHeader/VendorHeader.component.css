@@ -1,0 +1,39 @@
+nav{
+  height: 100%;
+}
+.side-nav-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.side-nav-button:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30%;
+}
+.navbar-collapse{
+  position: relative;
+}
+.btns{
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+}
+.demo-section{
+  cursor: pointer;
+
+}
+.bx.bxs-bell{
+  color: #fff;
+  font-size: 1.8rem;
+  
+}
+.search-input{
+  margin-left: 10rem;
+}
+form{
+  width: 45%;
+}

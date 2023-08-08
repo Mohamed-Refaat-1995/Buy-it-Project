@@ -1,0 +1,28 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+  nav{
+  background-color: var(--bg-color);
+}
+*{
+  color: var(--text-color);
+
+}
+
+#logo{
+font-family: cursive;
+line-height: 2rem;
+font-size: 1.3rem;
+font-weight: bold;
+
+}
+#search{
+width: 70%;
+}
+#arabic-toggle-btn{
+  font-weight: bold;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}

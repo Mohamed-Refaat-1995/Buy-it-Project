@@ -1,0 +1,43 @@
+app-VendorHeader{
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  height: 4rem;
+  z-index: 2;
+}
+main{
+  position: absolute;
+  width: 100%;
+  top: 4rem;
+  z-index: 1;
+}
+app-VendorSideBar{
+  position: absolute;
+  left: 0px;
+  width: 250px;
+  height: 88vh;
+  box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+  background-color: rgba(34, 34, 34, 1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  transition: all .3s ease-in;
+
+}
+.display-area{
+  position: absolute;
+  left: 250px;
+  width: calc(100%-250px);
+  transition: all .3s ease-in;
+
+}
+.app-VendorSideBar-collapse{
+  width: 60px;
+  transition: all .3s ease-in;
+}
+
+.display-area-collapse{
+  width: calc(100%-60px);
+  left: 60px;
+  transition: all .3s ease-in;
+
+}

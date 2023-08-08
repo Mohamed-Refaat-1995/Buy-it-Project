@@ -1,0 +1,163 @@
+ <div id="product-display-zone" class="row">
+  <div class="col-md-6 " id="product-image" >
+    
+    <lib-ngx-image-zoom
+    [thumbImage]=imageSrc
+    [fullImage]=imageSrc
+    [magnification]="2"
+    [lensWidth]="100"
+    [lensHeight]="100"
+    [enableLens]="true"
+   
+    >
+  </lib-ngx-image-zoom>
+
+  </div>
+
+  <div class="col-md-6 col-sm-12" >
+    <div id="prodName">
+      <h2> Next Generation NCLEX-RN Prep 2023-2024: Practice Test + Proven Strategies (Kaplan Test Prep)</h2>
+    </div>
+    <div id="prodBrand">
+      <strong>Brand :</strong> <span>Samsung</span>
+    </div>
+    <div id="prodcat">
+      <strong>Category :</strong> <span>Computer & Laptops</span>
+    </div>
+    <div id="prodRate">
+      <strong>Rate :</strong> <span>&#9733; &#9733; &#9733; <i class="fa fa-star-half-full"></i> &#9734;</span>
+    </div>
+    <div id="prodPrice">
+      <strong>Price :</strong> <span>5000 EGP</span>
+    </div>
+    <hr>
+    <div id="cart-item-box">
+      <div matBadge="4" matBadgeOverlap="true" id="shpping-bag">
+        <img src="../../../assets/icons8-add-shopping-cart-100.png" alt="">
+      </div>
+      <div id="shopping-btns">
+        <button mat-raised-button color="warn" class="cart-btns">Add To Cart</button>
+        <button mat-raised-button color="warn" class="cart-btns"(click)="goToCart()">Go To Cart</button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+</div> 
+ <div id="customer-comments">
+  <p>
+    <mat-toolbar class="mx-1">
+      <div id="feedback-box">
+        <span>Customer Feedback</span>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  +
+</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Add Your Feedback</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <mat-form-field>
+          <mat-label>Select Your Rate</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <br>
+          <mat-form-field class="example-full-width">
+            <mat-label>Leave a comment</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+          </mat-form-field>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Comment</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </mat-toolbar>
+  </p>
+<div class="row mx-1 mb-2">
+  <div class="col-md-3 col-sm-6">
+    <mat-card class="example-card ">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class="mt-1">Mohamed Refaat</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+        <strong>Rate :</strong> <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+  
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <mat-card class="example-card ">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class="mt-1">Mohamed Refaat</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+        <strong>Rate :</strong> <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+  
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-md-3 d-sm-none d-md-block">
+    <mat-card class="example-card ">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class="mt-1">Mohamed Refaat</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+        <strong>Rate :</strong> <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+  
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-md-3 d-sm-none d-md-block">
+    <mat-card class="example-card ">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class="mt-1">Mohamed Refaat</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+        <strong>Rate :</strong> <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+  
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+</div>

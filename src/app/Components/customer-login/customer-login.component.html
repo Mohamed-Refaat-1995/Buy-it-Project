@@ -1,0 +1,24 @@
+<div id="login-body">
+<form id="login-form">
+  <h2 id="logo">Buy it</h2>
+  <h2 >Login to <span id="login-description">Buy it</span></h2>
+  <mat-form-field id="input-Email">
+    <mat-label>Enter Your Email</mat-label>
+    <input matInput>
+  </mat-form-field>
+  <mat-form-field id="input-Password">
+    <mat-label>Enter your password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+
+    <mat-checkbox id="remember-me-btn">Remember Password</mat-checkbox>
+    <a  id="forget-password"(click)="forgetPassword()">Forget Password?</a>
+    <a  id="a-new-cutomer"(click)="goToRegister()">A New Customer?</a>
+
+    <button mat-raised-button color="warn" id="login-btn"(click)="Login()">Login</button>
+    <button mat-raised-button  id="login-google-btn" >Login With Google<img src="../../../assets/google logo.png" width="30px" alt="login with google" loading="lazy"></button>
+</form>
+</div>

@@ -1,0 +1,25 @@
+<form >
+  <mat-form-field [ngClass]="{'store-name-collapsed': updateWidth}" class="store-name">
+    <mat-label>Store Name</mat-label>
+    <input matInput placeholder="Write Your Store Name" >
+  </mat-form-field>
+  <br>
+  <mat-form-field class="category-name" [ngClass]="{'category-name-collapsed': updateWidth}">
+  <mat-label>Store Category</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{food.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<br>
+<mat-form-field [ngClass]="{'store-name-collapsed': updateWidth}" class="store-name">
+  <mat-label>Store Brands</mat-label>
+  <input matInput placeholder="Write Your Store Brands" >
+</mat-form-field>
+<div class="btns">
+  <button mat-flat-button color="warn"><strong>-</strong></button>
+  <button mat-flat-button color="warn"><strong>+</strong></button>
+</div>
+
+</form>
